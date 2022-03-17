@@ -1,0 +1,33 @@
+{
+  "name": "clone-telegram-backend",
+  "version": "1.0.0",
+  "description": "I am making a telegram clone to improve my coding skills.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aktasburaken/clone-telegram-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aktasburaken/clone-telegram-backend/issues"
+  },
+  "homepage": "https://github.com/aktasburaken/clone-telegram-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7",
+    "axios": "^0.26.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "moment": "^2.29.1"
+  }
+}
