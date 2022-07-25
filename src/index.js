@@ -7,7 +7,6 @@ const Router = require('koa-router');
 
 var router = new Router();
 
-
 const app = new Koa();
 
 //bodyparser
@@ -38,7 +37,7 @@ app.use(async (ctx, next) => {
 
 app.use(async (ctx, next) => {
     if (ctx.request.path === "/randomuser") {
-        const response = await axios.get("https://randomuser.me/api/?results=5&seed=123")
+        const response = await axios.get("https://randomuser.me/api/?results=8&seed=123")
         console.log(response)
         faker.seed(2023)
         let users = response.data.results.map(user => {
@@ -62,12 +61,7 @@ app.use(async (ctx, next) => {
         }
 
         ctx.body = users
-
     }
-})
-
-app.get('/messages', (req, res) => {
-    res.json('selam')
 })
 
 app.listen(8082);
